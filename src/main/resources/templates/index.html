@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8"/>
+    <title>userList</title>
+</head>
+<body class="container">
+<form action="/user/test" th:method="get">
+    <table>
+
+        <tr>
+            <td>用户名：</td>
+            <td><input th:type="text" th:name="username" ></td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input th:type="text" th:name="password" ></td>
+        </tr>
+        <tr>
+            <td><input type="submit"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
